@@ -2,247 +2,219 @@
 
 {% block main %}
 
-    <div class="row-fluid">
-
-        <div class="span2">
-            <ul class="nav nav-pills nav-stacked">
-
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/profile">Profile</a>
-                </li>
-                <li>
-                    <a href="/current">Current Degree</a>
-                </li>
-                <li class="active">
-                    <a href="/what_if">What If?</a>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="span10">
+    <select id="select">
+        <option>Select a major</option>
+        <option label="Computer Engineering">Computer Engineering</option>
+        <option label="Software Engineering">Software Engineering</option>
+        <option label="Computer Science">Computer Science</option>
+    </select>
 
 
-            <select id="select">
-                <option>Select a major</option>
-                <option label="Computer Engineering">Computer Engineering</option>
-                <option label="Software Engineering">Software Engineering</option>
-                <option label="Computer Science">Computer Science</option>
-            </select>
+    <div id="cpre" class="content" style="margin-top: 15px; display: none">
+        <div class="alert"><b>Computer Engineering</b> is your current major.</div>
+    </div>
 
+    <div id="se" class="content" style="margin-top: 15px; display: none">
+        <div class="alert">Switching to <b>Software Engineering</b> would add 1 semester to your current graduation date.</div>
 
-            <div id="cpre" class="content" style="margin-top: 15px; display: none">
-                <div class="alert"><b>Computer Engineering</b> is your current major.</div>
+        <h3>Fall 11</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 165</span><br><br>4 Credits</div>
             </div>
 
-            <div id="se" class="content" style="margin-top: 15px; display: none">
-                <div class="alert">Switching to <b>Software Engineering</b> would add 1 semester to your current graduation date.</div>
+            <div class="span2">
+                <div class="well"><span class="gbold">ENGR 101</span><br><br>R Credits</div>
+            </div>
 
-                <h3>Fall 11</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Math 165</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 185</span><br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">ENGR 101</span><br><br>R Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Chem 167</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">CprE 185</span><br><br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Lib 160</span><br><br>0.5 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Chem 167</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Engl 150</span><br><br>3 Credits</div>
+            </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Lib 160</span><br><br>0.5 Credits</div>
-                    </div>
+        <h3>Spring 12</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 166</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Engl 150</span><br><br>3 Credits</div>
-                    </div>
-                </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Phys 221</span><br><br>5 Credits</div>
+            </div>
 
-                <h3>Spring 12</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Math 166</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 166</span><br><br>R Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Phys 221</span><br><br>5 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">ComS 227</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">CprE 166</span><br><br>R Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Something</span><br>Gen Ed<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">ComS 227</span><br><br>4 Credits</div>
-                    </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Something</span><br>Gen Ed<br>3 Credits</div>
-                    </div>
+        <h3>Fall 12</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 265</span><br><br>3 Credits</div>
+            </div>
 
-                </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Phys 222</span><br><br>5 Credits</div>
+            </div>
 
-                <h3>Fall 12</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Math 265</span><br><br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 281</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Phys 222</span><br><br>5 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">ComS 228</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">CprE 281</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 294</span><br><br>R Credits</div>
+            </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">ComS 228</span><br><br>4 Credits</div>
-                    </div>
+        <h3>Spring 13</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 267</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">CprE 294</span><br><br>R Credits</div>
-                    </div>
-                </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">EE 201</span><br><br>4 Credits</div>
+            </div>
 
-                <h3>Spring 13</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Math 267</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 288</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">EE 201</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><span class="gbold">Engl 250</span><br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">CprE 288</span><br><br>4 Credits</div>
-                    </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well"><span style="color: green; font-weight: bold">Engl 250</span><br><br>3 Credits</div>
-                    </div>
+        <h3>Fall 13</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><br>Econ Elective<br>3 Credits</div>
+            </div>
 
-                </div>
+            <div class="span2">
+                <div class="well"><br>Splm Elective<br>3 Credits</div>
+            </div>
 
-                <h3>Fall 13</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><br>Econ Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><br>Math Elective<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>Splm Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">ComS 229<br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>Math Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">SE 319<br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">ComS 229<br><br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">Gen Ed<br><br>3 Credits</div>
+            </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well">SE 319<br><br>3 Credits</div>
-                    </div>
+        <h3>Spring 14</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><br>Gen Ed<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">Gen Ed<br><br>3 Credits</div>
-                    </div>
-                </div>
+            <div class="span2">
+                <div class="well"><br>EE Elective<br>3 Credits</div>
+            </div>
 
-                <h3>Spring 14</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><br>Gen Ed<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">CprE 308</span><br><br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>EE Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">ComS 311</span><br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">CprE 308</span><br><br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">Engl 314<br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">ComS 311</span><br><br>3 Credits</div>
-                    </div>
-
-                    <div class="span2">
-                        <div class="well">Engl 314<br><br>3 Credits</div>
-                    </div>
-
-                </div>
+        </div>
 
 
 
-                <h3>Fall 14</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><br>Gen Ed<br>3 Credits</div>
-                    </div>
+        <h3>Fall 14</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><br>Gen Ed<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>Tech Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><br>Tech Elective<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>Tech Elective<br>4 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><br>Tech Elective<br>4 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well"><br>CprE Elective<br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><br>CprE Elective<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">CprE 491<br><br>3 Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well">CprE 491<br><br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">CprE 494<br><br>R Credits</div>
-                    </div>
-
-
-
-                </div>
+            <div class="span2">
+                <div class="well">CprE 494<br><br>R Credits</div>
+            </div>
 
 
-                <h3>Spring 15</h3><hr>
-                <div class="row-fluid">
-                    <div class="span2">
-                        <div class="well"><br>Gen Ed<br>3 Credits</div>
-                    </div>
 
-                    <div class="span2">
-                        <div class="well"><br>Tech Elective<br>4 Credits</div>
-                    </div>
+        </div>
 
-                    <div class="span2">
-                        <div class="well"><br>CprE Elective<br>3 Credits</div>
-                    </div>
 
-                    <div class="span2">
-                        <div class="well"><br>ComS Elective<br>2 Credits</div>
-                    </div>
+        <h3>Spring 15</h3><hr>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well"><br>Gen Ed<br>3 Credits</div>
+            </div>
 
-                    <div class="span2">
-                        <div class="well">Stat 330<br><br>R Credits</div>
-                    </div>
+            <div class="span2">
+                <div class="well"><br>Tech Elective<br>4 Credits</div>
+            </div>
 
-                </div>
+            <div class="span2">
+                <div class="well"><br>CprE Elective<br>3 Credits</div>
+            </div>
 
+            <div class="span2">
+                <div class="well"><br>ComS Elective<br>2 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well">Stat 330<br><br>R Credits</div>
             </div>
 
         </div>

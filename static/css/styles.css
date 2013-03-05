@@ -120,3 +120,8 @@ input.payroll-input {
 .table-buttons {
     min-height: 40px;
 }
+
+.gbold {
+    color: green;
+    font-weight: bold;
+}

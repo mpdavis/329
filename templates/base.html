@@ -35,7 +35,34 @@
 
         <hr>
 
-        {% block main %}{% endblock %}
+        <div class="row-fluid">
+
+            <div class="span2">
+                <ul class="nav nav-pills nav-stacked">
+
+                    <li {% if current_tab == 'home' %}class="active"{% endif %}>
+                        <a href="/">Home</a>
+                    </li>
+                    <li {% if current_tab == 'profile' %}class="active"{% endif %}>
+                        <a href="/profile">Profile</a>
+                    </li>
+                    <li {% if current_tab == 'current' %}class="active"{% endif %}>
+                        <a href="/current">Current Degree</a>
+                    </li>
+                    <li {% if current_tab == 'whatif' %}class="active"{% endif %}>
+                        <a href="/what_if">What If?</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="span10">
+
+                {% block main %}{% endblock %}
+
+            </div>
+        </div>
+
 
         <div id="push"></div>
     </div>
