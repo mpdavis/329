@@ -125,3 +125,45 @@ input.payroll-input {
     color: green;
     font-weight: bold;
 }
+
+.expandable:hover {
+    cursor: pointer;
+}
+
+.expandable-arrow {
+    display: none;
+    position: relative;
+    left:-20px;
+    bottom:-25px;
+    float:right;
+}
+
+.available-classes {
+    border: 5px solid #999999;
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+    overflow-y: auto;
+    background-color: #fafafa;
+}
+
+.old-hider {
+    display: none;
+}
+
+.hider-trigger:hover {
+    cursor: pointer;
+}
+
+.planning-container {
+    border: 5px dashed #999999;
+    border-radius: 5px;
+    height: 150px;
+    width: 100%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.span2.ui-droppable {
+    height: 100px;
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>DegreeForward</title>
 
+    <link href="{{ url_for('static', filename='css/jquery-ui-1.10.1.custom.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 
@@ -49,6 +50,9 @@
                     <li {% if current_tab == 'current' %}class="active"{% endif %}>
                         <a href="/current">Current Degree</a>
                     </li>
+                    <li {% if current_tab == 'plan' %}class="active"{% endif %}>
+                        <a href="/plan">Plan</a>
+                    </li>
                     <li {% if current_tab == 'whatif' %}class="active"{% endif %}>
                         <a href="/what_if">What If?</a>
                     </li>
@@ -56,7 +60,7 @@
                 </ul>
             </div>
 
-            <div class="span10">
+            <div class="span10" id="main-content">
 
                 {% block main %}{% endblock %}
 
@@ -79,6 +83,7 @@
 <!-- JavaScript at the bottom for fast page loading -->
 
 <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery-ui-1.10.1.custom.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
 
 <!-- Additional JavaScript libraries and plugins... -->
