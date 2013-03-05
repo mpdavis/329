@@ -8,10 +8,18 @@ app.debug = True
 def index():
     return render_template('index.html')
 
-@app.route('/demo')
-def demo():
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
 
-    return render_template('demo.html')
+@app.route('/current')
+def current():
+    return render_template('current.html')
+
+@app.route('/what_if')
+def what_if():
+    return render_template('what_if.html')
+
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
