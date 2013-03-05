@@ -16,6 +16,10 @@ def profile():
 def current():
     return render_template('current.html', **{'current_tab': 'current'})
 
+@app.route('/plan')
+def plan():
+    return render_template('plan.html', **{'current_tab': 'plan'})
+
 @app.route('/what_if')
 def what_if():
     return render_template('what_if.html', **{'current_tab': 'whatif'})

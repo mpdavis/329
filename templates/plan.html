@@ -1,0 +1,424 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+    <div class="available-classes container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well draggable"><br>Gen Ed<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">EE 230<br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 381<br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 310<br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">ComS 309<br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 394<br><br>R Credits</div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well draggable"><br>Gen Ed<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>EE Elective<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 308</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">ComS 311</span><br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">Engl 314<br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>Gen Ed<br>3 Credits</div>
+            </div>
+
+        </div>
+
+        <div class="row-fluid">
+
+            <div class="span2">
+                <div class="well draggable"><br>Tech Elective<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>Tech Elective<br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>CprE Elective<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 491<br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">CprE 494<br><br>R Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>Gen Ed<br>3 Credits</div>
+            </div>
+
+        </div>
+
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well draggable"><br>Tech Elective<br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>CprE Elective<br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable"><br>ComS Elective<br>2 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well draggable">Stat 330<br><br>R Credits</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="old-semester-hider-trigger" style="text-align: center; padding: 8px; border-radius: 5px; margin-left: 2px; margin-top: 10px;   " class="hider-trigger well">Click to view previous semesters.</div>
+    <div id="old-semester-hider" class="old-hider">
+        <h3 class="expandable" accesskey="fall11">Fall 11 <i class="icon-chevron-down expandable-arrow"></i></h3><hr>
+        <div id="fall11" class="row-fluid semester-container" style="display:none;">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 165</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">ENGR 101</span><br><br>R Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 185</span><br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Chem 167</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Lib 160</span><br><br>0.5 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Engl 150</span><br><br>3 Credits</div>
+            </div>
+        </div>
+
+        <h3 class="expandable" accesskey="spring12">Spring 12 <i class="icon-chevron-down expandable-arrow"></i></h3><hr>
+        <div id="spring12" class="row-fluid semester-container" style="display:none;">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 166</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Phys 221</span><br><br>5 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 166</span><br><br>R Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">ComS 227</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Something</span><br>Gen Ed<br>3 Credits</div>
+            </div>
+
+        </div>
+
+        <h3 class="expandable" accesskey="fall12">Fall 12 <i class="icon-chevron-down expandable-arrow"></i></h3><hr>
+        <div id="fall12" class="row-fluid semester-container" style="display:none;">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 265</span><br><br>3 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Phys 222</span><br><br>5 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 281</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">ComS 228</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 294</span><br><br>R Credits</div>
+            </div>
+        </div>
+
+        <h3 class="expandable" accesskey="spring13">Spring 13 <i class="icon-chevron-down expandable-arrow"></i></h3><hr>
+        <div id="spring13" class="row-fluid semester-container" style="display:none;">
+            <div class="span2">
+                <div class="well"><span class="gbold">Math 267</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">EE 201</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">CprE 288</span><br><br>4 Credits</div>
+            </div>
+
+            <div class="span2">
+                <div class="well"><span class="gbold">Engl 250</span><br><br>3 Credits</div>
+            </div>
+
+        </div>
+    </div>
+
+    <h3 class="expandable" accesskey="fall13">Fall 13</h3><hr>
+    <div id="fall13" class="container-fluid semester-container">
+        <div class="row-fluid planning-container">
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+        </div>
+    </div>
+
+    <h3 class="expandable" accesskey="spring14">Spring 14</h3><hr>
+    <div id="spring14" class="container-fluid semester-container" style="display:none;">
+        <div class="row-fluid planning-container">
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <h3 class="expandable" accesskey="fall14">Fall 14</h3><hr>
+    <div id="fall14" class="container-fluid semester-container" style="display:none;">
+        <div class="row-fluid planning-container">
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+        </div>
+    </div>
+
+
+    <h3 class="expandable" accesskey="spring15">Spring 15</h3><hr>
+    <div id="spring15" class="container-fluid semester-container" style="display:none;">
+        <div class="row-fluid planning-container">
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+            <div class="span2">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Begin Modals -->
+    <div id="cpre" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="cpreLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="cpreLabel">Choose a CprE Elective</h3>
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <form id="cpre_form">
+                    <tr>
+                        <th>Class</th>
+                        <th>Credits</th>
+                        <th>Description</th>
+                        <th>Choose</th>
+                    </tr>
+                    <tr>
+                        <td>CprE 329</td>
+                        <td>3</td>
+                        <td><a href="#">Link</a></td>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="329" value="CprE 329">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CprE 330</td>
+                        <td>4</td>
+                        <td><a href="#">Link</a></td>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="330" value="option1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CprE 339</td>
+                        <td>3</td>
+                        <td><a href="#">Link</a></td>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="339" value="option1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CprE 388</td>
+                        <td>4</td>
+                        <td><a href="#">Link</a></td>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="388" value="option1">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CprE 416</td>
+                        <td>3</td>
+                        <td><a href="#">Link</a></td>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="optionsRadios" id="416" value="option1">
+                            </label>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            <button id="cpre_save" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+    <script>
+
+        $(document).ready(function() {
+            $('.expandable').on('mouseover', function(e) {
+                $(this).find('i').show();
+            }).on('mouseleave', function(e) {
+               $(this).find('i').hide();
+            }).on("click", function(e) {
+                var id = $(this).attr('accesskey');
+                var thatone = $("#" + id).slideToggle();
+                $('.semester-container').not(thatone).slideUp();
+            });
+
+            $('#old-semester-hider-trigger').on('click', function(e){
+                $('#old-semester-hider').slideToggle();
+            });
+
+            $('.draggable').draggable({
+                containment: $('#main-content'),
+                snap: 'inner',
+                helper: 'clone',
+                appendTo: '#main-content'
+            });
+
+            $('.planning-container > .span2').droppable({
+                accept: '.draggable',
+                activeClass: "ui-state-highlight",
+                tolerance: 'touch',
+                drop: function (event, ui) {
+                    $(this).append(ui.draggable);
+                }
+            });
+
+
+
+        });
+
+
+
+    </script>
+
+
+{% endblock %}
