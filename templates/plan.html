@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
-{% block main %}
 
+{% block main %}
+    <h3>Available Courses</h3>
     <div class="available-classes container-fluid">
         <div class="row-fluid">
             <div class="span2">
@@ -103,7 +104,7 @@
 
     </div>
 
-    <div id="old-semester-hider-trigger" style="text-align: center; padding: 8px; border-radius: 5px; margin-left: 2px; margin-top: 10px;   " class="hider-trigger well">Click to view previous semesters.</div>
+    <div id="old-semester-hider-trigger" style="text-align: center; padding: 8px; border-radius: 5px; margin-left: 2px; margin-top: 10px; border: 2px dotted #EEEEEE; background-color: #F6F6F6;" class="hider-trigger">Click to view previous semesters.</div>
     <div id="old-semester-hider" class="old-hider">
         <h3 class="expandable" accesskey="fall11">Fall 11 <i class="icon-chevron-down expandable-arrow"></i></h3><hr>
         <div id="fall11" class="row-fluid semester-container" style="display:none;">
@@ -409,11 +410,9 @@
                 tolerance: 'touch',
                 drop: function (event, ui) {
                     $(this).append(ui.draggable);
+                    $(this).parents().find('.empty-plan').remove();
                 }
             });
-
-
-
         });
 
 
