@@ -10,15 +10,15 @@ def index():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', **{'current_tab': 'profile'})
 
 @app.route('/current')
 def current():
-    return render_template('current.html')
+    return render_template('current.html', **{'current_tab': 'current'})
 
 @app.route('/what_if')
 def what_if():
-    return render_template('what_if.html')
+    return render_template('what_if.html', **{'current_tab': 'whatif'})
 
 
 if __name__ == '__main__':
